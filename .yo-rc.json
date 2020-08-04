@@ -36,7 +36,11 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true
+    "prettierJava": true,
+    "appsFolders": ["jhipster-sample-application"],
+    "directoryPath": "../",
+    "monitoring": "no",
+    "consoleOptions": []
   },
   "git-provider": "GitHub",
   "git-company": "rajattyagipvr",
