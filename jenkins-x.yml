@@ -70,7 +70,7 @@ pipelineConfig:
             # build base images
             - name: clean-1
               image: jhipster/jhipster:v6.9.0
-              command: chmod +x mvnw
+              command: sudo -S jhipster chmod +x mvnw
             - name: clean-2
               image: jhipster/jhipster:v6.9.0
               command: ./mvnw -ntp clean -P-webpack
