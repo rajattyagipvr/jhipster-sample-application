@@ -1,0 +1,65 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-credential-initializer-d9fx8[0m
+{"level":"warn","ts":1596623944.6251166,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596623944.6266677,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-working-dir-initializer-mcfrb[0m
+{"level":"warn","ts":1596623945.6107185,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596623945.6241398,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-git-source-rajattyagipvr-jhipster-sample-a-sf4hv-k29gl[0m
+{"level":"warn","ts":1596624011.7657633,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596624014.8826518,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-sample-application.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5f6cd6973a20375674d990f5368deba8d23ba6ac
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-clean-1[0m
+[sudo] password for jhipster: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-clean-2[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jhipster-sample-application ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  46.244 s
+[INFO] Finished at: 2020-08-05T10:41:08Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-sf4hv-3[0m stage [32mbuild-base[0m and container [32mstep-install-tools[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:install-node-and-npm (default-cli) @ jhipster-sample-application ---
+[INFO] Installing node version v12.16.1
+[INFO] Downloading https://nodejs.org/dist/v12.16.1/node-v12.16.1-linux-x64.tar.gz to /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz
+[INFO] No proxies configured
+[INFO] No proxy was configured, downloading directly
+[INFO] Unpacking /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz into /workspace/source/node/tmp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  53.067 s
+[INFO] Finished at: 2020-08-05T10:42:08Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.10.0:install-node-and-npm (default-cli) on project jhipster-sample-application: Could not extract the Node archive: Could not extract archive: '/home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz': Could not get write permissions for '/workspace/source/node/tmp/node-v12.16.1-linux-x64/bin' -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[31m
+Pipeline failed on stage 'build-base' : container 'step-install-tools'. The execution of the pipeline has stopped.[0m
