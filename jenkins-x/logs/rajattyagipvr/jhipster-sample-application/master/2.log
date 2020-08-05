@@ -1,0 +1,23 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-credential-initializer-n4w66[0m
+{"level":"warn","ts":1596623775.7336793,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596623775.7339342,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-working-dir-initializer-7ntb6[0m
+{"level":"warn","ts":1596623776.7711294,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596623776.7719817,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-git-source-rajattyagipvr-jhipster-sample-a-ppdkt-fnk5m[0m
+{"level":"warn","ts":1596623826.9200206,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596623829.8913224,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-sample-application.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d9867f6f9e62ff9d5ce37f1af90dd424d8305a4e
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-ppdkt-2[0m stage [32mbuild-base[0m and container [32mstep-clean-1[0m
+[sudo] password for jhipster: 
+[31m
+Pipeline failed on stage 'build-base' : container 'step-clean-1'. The execution of the pipeline has stopped.[0m
