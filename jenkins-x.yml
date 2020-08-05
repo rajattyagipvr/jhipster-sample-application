@@ -93,10 +93,10 @@ pipelineConfig:
               command: /kaniko/executor
               args:
                 - --dockerfile=/workspace/source/Dockerfile
-                - --destination=702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jhipster-test:${inputs.params.version}
+                - --destination=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG/$APP_NAME:${inputs.params.version}
                 - --context=/workspace/source
-                - --skip-tls-verify-registry=702769831180.dkr.ecr.ap-south-1.amazonaws.com
-                - --cache-repo=702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/cache
+                - --skip-tls-verify-registry=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG
+                - --cache-repo=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG/cache
                 - --cache=true
                 - --cache-dir=/workspace
           
