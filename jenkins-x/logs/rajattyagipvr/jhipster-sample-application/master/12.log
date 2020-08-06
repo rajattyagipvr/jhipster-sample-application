@@ -1,0 +1,157 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-credential-initializer-glsrm[0m
+{"level":"warn","ts":1596705354.763398,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596705354.7637877,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-working-dir-initializer-mnmwc[0m
+{"level":"warn","ts":1596705356.029499,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705356.030408,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-create-dir-workspace-ljwp2[0m
+{"level":"warn","ts":1596705361.0990226,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705361.0998623,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-git-source-rajattyagipvr-jhipster-sample-a-zqxbf-vwt96[0m
+{"level":"warn","ts":1596705361.2991283,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596705364.4661758,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-sample-application.git @ v1.2.8 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:382d3863b26d9d7cb9c355be80c275c26a2dad13
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-next-version[0m
+created new version: 1.2.9 and written to file: ./VERSION
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-tag-version[0m
+Updating chart version in charts/jhipster-sample-application/Chart.yaml to 1.2.9
+Updating repository in charts/jhipster-sample-application/values.yaml to 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jhipster-sample-application
+Updating tag in charts/jhipster-sample-application/values.yaml to 1.2.9
+Tag v1.2.9 created and pushed to remote origin
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-source-mkdir-rajattyagipvr-jhipster-sample-a-zqxbf-8vbv6[0m
+{"level":"warn","ts":1596705375.0993404,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705375.1052656,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/setup/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32msetup[0m and container [32mstep-source-copy-rajattyagipvr-jhipster-sample-a-zqxbf-llfgl[0m
+{"level":"warn","ts":1596705375.306942,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705375.3271873,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/setup/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-credential-initializer-2ttlt[0m
+{"level":"warn","ts":1596705378.447826,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596705378.4482577,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-working-dir-initializer-sjxff[0m
+{"level":"warn","ts":1596705379.3883033,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705379.3895123,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-create-dir-workspace-fdvgb[0m
+{"level":"warn","ts":1596705440.6375992,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705440.6463785,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-create-dir-workspace-6llhc[0m
+{"level":"warn","ts":1596705440.8061824,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705440.807129,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-source-copy-workspace-qgw4v[0m
+{"level":"warn","ts":1596705441.0349236,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596705441.269386,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/setup/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-clean-1[0m
+[sudo] password for jhipster: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-clean-1-1[0m
+[sudo] password for jhipster: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-clean-2[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.9
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jhipster-sample-application ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  47.192 s
+[INFO] Finished at: 2020-08-06T09:18:13Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-install-tools[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.9
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:install-node-and-npm (default-cli) @ jhipster-sample-application ---
+[INFO] Installing node version v12.16.1
+[INFO] Downloading https://nodejs.org/dist/v12.16.1/node-v12.16.1-linux-x64.tar.gz to /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz
+[INFO] No proxies configured
+[INFO] No proxy was configured, downloading directly
+[INFO] Unpacking /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz into /workspace/source/node/tmp
+[INFO] Copying node binary from /workspace/source/node/tmp/node-v12.16.1-linux-x64/bin/node to /workspace/source/node/node
+[INFO] Installed node locally.
+[INFO] Installing npm version 6.14.5
+[INFO] Downloading https://registry.npmjs.org/npm/-/npm-6.14.5.tgz to /home/jhipster/.m2/repository/com/github/eirslett/npm/6.14.5/npm-6.14.5.tar.gz
+[INFO] No proxies configured
+[INFO] No proxy was configured, downloading directly
+[INFO] Unpacking /home/jhipster/.m2/repository/com/github/eirslett/npm/6.14.5/npm-6.14.5.tar.gz into /workspace/source/node/node_modules
+[INFO] Installed npm locally.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  55.605 s
+[INFO] Finished at: 2020-08-06T09:19:13Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-zqxbf-12[0m stage [32mbuild-base[0m and container [32mstep-install-npm[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.9
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:npm (default-cli) @ jhipster-sample-application ---
+[INFO] Running 'npm install' in /workspace/source
+[INFO] npm WARN deprecated tslint@6.1.2: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.
+[INFO] npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+[INFO] npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[INFO] npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+[INFO] npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+[INFO] npm WARN deprecated rollup-plugin-babel@4.4.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
+[INFO] npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+[INFO] npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[INFO] npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+[INFO] npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+[INFO] npm ERR! code E404
+[INFO] npm ERR! 404 Not Found - GET https://registry.npmjs.org/@ngx-translate%2fhttp-loader - Not found
+[INFO] npm ERR! 404 
+[INFO] npm ERR! 404  '@ngx-translate/http-loader@5.0.0' is not in the npm registry.
+[INFO] npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+[INFO] npm ERR! 404 It was specified as a dependency of 'source'
+[INFO] npm ERR! 404 
+[INFO] npm ERR! 404 Note that you can also install from a
+[INFO] npm ERR! 404 tarball, folder, http url, or git url.
+[INFO] 
+[INFO] npm ERR! A complete log of this run can be found in:
+[INFO] npm ERR!     /builder/home/.npm/_logs/2020-08-06T09_20_52_919Z-debug.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:33 min
+[INFO] Finished at: 2020-08-06T09:20:52Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.10.0:npm (default-cli) on project jhipster-sample-application: Failed to run task: 'npm install' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[31m
+Pipeline failed on stage 'build-base' : container 'step-install-npm'. The execution of the pipeline has stopped.[0m
