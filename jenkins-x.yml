@@ -77,13 +77,13 @@ pipelineConfig:
                 value: jenkins-x-bot
             steps:
             # build base images
-            - name: clean-1
+            - name: chmod
               image: jhipster/jhipster:v6.9.0
               command: echo jhipster | sudo -S chmod +777 ./
-            - name: clean-1-1
+            - name: chmod mvnw 
               image: jhipster/jhipster:v6.9.0
               command: echo jhipster | sudo -S chmod +x mvnw  
-            - name: clean-2
+            - name: clean-webpack
               image: jhipster/jhipster:v6.9.0
               command: ./mvnw -ntp clean -P-webpack
             - name: install-tools
