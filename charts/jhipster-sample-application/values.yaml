@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jhipster-sample-application
-  tag: 1.2.10
+  tag: 1.2.11
   pullPolicy: IfNotPresent
 
 # define environment variables here as a map of key: value
