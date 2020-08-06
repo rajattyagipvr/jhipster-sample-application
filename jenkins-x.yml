@@ -102,7 +102,7 @@ pipelineConfig:
               command: /kaniko/executor
               args:
                 - --dockerfile=/workspace/source/Dockerfile
-                - --destination=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG/$APP_NAME:${inputs.params.version}
+                - --destination=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG/$APP_NAME:$(cat ./VERSION)
                 - --context=/workspace/source
                 - --skip-tls-verify-registry=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG
                 - --cache-repo=$DOCKER_REGISTRY/$DOCKER_REGISTRY_ORG/cache
