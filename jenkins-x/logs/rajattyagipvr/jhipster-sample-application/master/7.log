@@ -1,0 +1,27 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-credential-initializer-4nwxv[0m
+{"level":"warn","ts":1596692424.324775,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596692424.3288095,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-working-dir-initializer-c8kct[0m
+{"level":"warn","ts":1596692425.2920122,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596692425.3012877,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-create-dir-workspace-7xdzh[0m
+{"level":"warn","ts":1596692434.2821977,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596692434.2833402,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-git-source-rajattyagipvr-jhipster-sample-a-9hww8-68rpl[0m
+{"level":"warn","ts":1596692434.6394703,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596692437.758452,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-sample-application.git @ v0.0.7 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:2dd19e1abd3115aa8412e7ec5117285b402d5021
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-9hww8-7[0m stage [32msetup[0m and container [32mstep-next-version[0m
+2020/08/06 05:40:40 Error executing command: fork/exec /bin/sh: no such file or directory
+[31m
+Pipeline failed on stage 'setup' : container 'step-next-version'. The execution of the pipeline has stopped.[0m
