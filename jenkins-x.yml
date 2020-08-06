@@ -42,6 +42,13 @@ pipelineConfig:
         agent:
           image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
         stages:
+          - name: setup
+            steps:
+            - sh: jx step next-version --filename pom.xml
+              name: next-version
+            - sh: jx step tag --version \$(cat VERSION)
+              name: tag-version
+          
           - name: build-base
             options:
               volumes:
@@ -112,3 +119,30 @@ pipelineConfig:
             #   dir: /workspace/source
             #   name: promote-release
             #   image: gcr.io/jenkinsxio/builder-go
+            
+          - name: promote
+            dir: ./charts/REPLACE_ME_APP_NAME
+            steps:
+              - sh: jx step changelog --version v\$(cat ../../VERSION)
+                name: changelog
+                image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl
+              - sh: jx step helm release
+                image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl
+                name: helm-release
+              - sh: jx promote -b --all-auto --timeout 1h --version \$(cat ../../VERSION)
+                name: jx-promote
+                image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl  
+            
+            
+            # - command: jx step changelog --version v\$(cat ../../VERSION)
+            #   dir: ./charts/REPLACE_ME_APP_NAME
+            #   image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl
+            #   name: promote-changelog
+            # - command: jx step helm release
+            #   dir: /workspace/source/charts/spring-http-gradle
+            #   image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl
+            #   name: promote-helm-release
+            # - comment: promote through all 'Auto' promotion Environments
+            #   sh: jx promote -b --all-auto --timeout 1h --version \$(cat ../../VERSION)
+            #   name: jx-promote
+            #   image: 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jxl
