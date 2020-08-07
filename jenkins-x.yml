@@ -94,7 +94,9 @@ pipelineConfig:
               command: ./mvnw -ntp com.github.eirslett:frontend-maven-plugin:npm
             - name: package
               image: jhipster/jhipster:v6.9.0
-              command: ./mvnw -ntp verify -P-webpack -Pdev -DskipTests
+              #command: ./mvnw -ntp verify -P-webpack -Pprod -DskipTests
+              # for testing below
+              command: ./mvnw -ntp verify -Pwebpack -Pdev -DskipTests
             # - name: build-push
             #   image: jhipster/jhipster:v6.9.0
             #   command: ./mvnw -ntp jib:build
