@@ -1,0 +1,516 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-credential-initializer-n2wzm[0m
+{"level":"warn","ts":1596782073.4820504,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596782073.4824488,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-working-dir-initializer-km2tl[0m
+{"level":"warn","ts":1596782074.5367217,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782074.5377333,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-create-dir-workspace-txtsv[0m
+{"level":"warn","ts":1596782080.5597184,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782080.560645,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-git-source-rajattyagipvr-jhipster-sample-a-mnb2h-qdwxl[0m
+{"level":"warn","ts":1596782080.8094459,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596782083.8600168,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-sample-application.git @ v1.2.20 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:aa6c0b2fe805104a6eec531dc7cc852b40cf2b2b
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-next-version[0m
+created new version: 1.2.21 and written to file: ./VERSION
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-tag-version[0m
+Updating chart version in charts/jhipster-sample-application/Chart.yaml to 1.2.21
+Updating repository in charts/jhipster-sample-application/values.yaml to 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jhipster-sample-application
+Updating tag in charts/jhipster-sample-application/values.yaml to 1.2.21
+Tag v1.2.21 created and pushed to remote origin
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-source-mkdir-rajattyagipvr-jhipster-sample-a-mnb2h-6tmfm[0m
+{"level":"warn","ts":1596782093.5704937,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782093.572603,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/setup/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32msetup[0m and container [32mstep-source-copy-rajattyagipvr-jhipster-sample-a-mnb2h-6689l[0m
+{"level":"warn","ts":1596782093.806015,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782093.8254876,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/setup/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-credential-initializer-7dbbd[0m
+{"level":"warn","ts":1596782096.4692006,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596782096.4696505,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-working-dir-initializer-w5c8j[0m
+{"level":"warn","ts":1596782097.564494,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782097.5655136,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-create-dir-workspace-mmvxr[0m
+{"level":"warn","ts":1596782104.6246705,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782104.62573,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-create-dir-workspace-z4st9[0m
+{"level":"warn","ts":1596782104.840687,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782104.8416471,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-source-copy-workspace-hdfr8[0m
+{"level":"warn","ts":1596782105.055542,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782105.0837204,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/setup/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-chmod[0m
+[sudo] password for jhipster: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-chmod-mvnw[0m
+[sudo] password for jhipster: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-clean-webpack[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.21
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jhipster-sample-application ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.571 s
+[INFO] Finished at: 2020-08-07T06:35:55Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-install-tools[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.21
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:install-node-and-npm (default-cli) @ jhipster-sample-application ---
+[INFO] Installing node version v12.16.1
+[INFO] Downloading https://nodejs.org/dist/v12.16.1/node-v12.16.1-linux-x64.tar.gz to /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz
+[INFO] No proxies configured
+[INFO] No proxy was configured, downloading directly
+[INFO] Unpacking /home/jhipster/.m2/repository/com/github/eirslett/node/12.16.1/node-12.16.1-linux-x64.tar.gz into /workspace/source/node/tmp
+[INFO] Copying node binary from /workspace/source/node/tmp/node-v12.16.1-linux-x64/bin/node to /workspace/source/node/node
+[INFO] Installed node locally.
+[INFO] Installing npm version 6.14.5
+[INFO] Downloading https://registry.npmjs.org/npm/-/npm-6.14.5.tgz to /home/jhipster/.m2/repository/com/github/eirslett/npm/6.14.5/npm-6.14.5.tar.gz
+[INFO] No proxies configured
+[INFO] No proxy was configured, downloading directly
+[INFO] Unpacking /home/jhipster/.m2/repository/com/github/eirslett/npm/6.14.5/npm-6.14.5.tar.gz into /workspace/source/node/node_modules
+[INFO] Installed npm locally.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  56.614 s
+[INFO] Finished at: 2020-08-07T06:36:56Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-install-npm[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.21
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:npm (default-cli) @ jhipster-sample-application ---
+[INFO] Running 'npm install' in /workspace/source
+[INFO] npm WARN deprecated tslint@6.1.2: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.
+[INFO] npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+[INFO] npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[INFO] npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+[INFO] npm WARN deprecated flat@4.1.0: Fixed a prototype pollution security issue in 4.1.0, please upgrade to ^4.1.1 or ^5.0.1.
+[INFO] npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+[INFO] npm WARN deprecated @hapi/joi@15.1.1: joi is leaving the @hapi organization and moving back to 'joi' (https://github.com/sideway/joi/issues/2411)
+[INFO] npm WARN deprecated rollup-plugin-babel@4.4.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
+[INFO] npm WARN deprecated @hapi/address@2.1.4: This version has been deprecated and is no longer supported or maintained
+[INFO] npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+[INFO] npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+[INFO] npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+[INFO] npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+[INFO] npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[INFO] npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+[INFO] npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+[INFO] 
+[INFO] > husky@4.2.5 install /workspace/source/node_modules/husky
+[INFO] > node husky install
+[INFO] 
+[INFO] husky > Setting up git hooks
+[INFO] CI detected, skipping Git hooks installation.
+[INFO] husky > Done
+[INFO] 
+[INFO] > @scarf/scarf@0.1.5 postinstall /workspace/source/node_modules/@scarf/scarf
+[INFO] > node ./report.js
+[INFO] 
+[INFO] 
+[INFO]     The dependency 'ngx-infinite-scroll' is tracking installation
+[INFO]     statistics using Scarf (https://scarf.sh), which helps open-source developers
+[INFO]     fund and maintain their projects. Scarf securely logs basic installation
+[INFO]     details when this package is installed. The Scarf npm library is open source
+[INFO]     and permissively licensed at https://github.com/scarf-sh/scarf-js. For more
+[INFO]     details about your project's dependencies, try running 'npm ls'. To opt out of
+[INFO]     analytics, set the environment variable 'SCARF_ANALYTICS=false'.
+[INFO]   
+[INFO] 
+[INFO] > ejs@2.7.4 postinstall /workspace/source/node_modules/@surma/rollup-plugin-off-main-thread/node_modules/ejs
+[INFO] > node ./postinstall.js
+[INFO] 
+[INFO] Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+[INFO] 
+[INFO] 
+[INFO] > core-js@2.6.11 postinstall /workspace/source/node_modules/core-js
+[INFO] > node -e "try{require('./postinstall')}catch(e){}"
+[INFO] 
+[INFO] 
+[INFO] > ejs@2.7.4 postinstall /workspace/source/node_modules/mem-fs-editor/node_modules/ejs
+[INFO] > node ./postinstall.js
+[INFO] 
+[INFO] Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+[INFO] 
+[INFO] 
+[INFO] > ejs@3.1.3 postinstall /workspace/source/node_modules/ejs
+[INFO] > node --harmony ./postinstall.js
+[INFO] 
+[INFO] Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+[INFO] 
+[INFO] 
+[INFO] > spawn-sync@1.0.15 postinstall /workspace/source/node_modules/spawn-sync
+[INFO] > node postinstall
+[INFO] 
+[INFO] 
+[INFO] > ejs@2.7.4 postinstall /workspace/source/node_modules/webpack-bundle-analyzer/node_modules/ejs
+[INFO] > node ./postinstall.js
+[INFO] 
+[INFO] Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+[INFO] 
+[INFO] 
+[INFO] > @angular/cli@10.0.0 postinstall /workspace/source/node_modules/@angular/cli
+[INFO] > node ./bin/postinstall/script.js
+[INFO] 
+[INFO] 
+[INFO] > husky@4.2.5 postinstall /workspace/source/node_modules/husky
+[INFO] > opencollective-postinstall || exit 0
+[INFO] 
+[INFO] Thank you for using husky!
+[INFO] If you rely on this package, please consider supporting our open collective:
+[INFO] > https://opencollective.com/husky/donate
+[INFO] 
+[INFO] 
+[INFO] > ngx-infinite-scroll@9.0.0 postinstall /workspace/source/node_modules/ngx-infinite-scroll
+[INFO] > opencollective-postinstall || exit 0
+[INFO] 
+[INFO] Thank you for using ngx-infinite-scroll!
+[INFO] If you rely on this package, please consider supporting our open collective:
+[INFO] > https://opencollective.com/ngx-infinite-scroll/donate
+[INFO] 
+[INFO] 
+[INFO] > jhipster-sample-application@0.0.1-SNAPSHOT postinstall /workspace/source
+[INFO] > node node_modules/protractor/bin/webdriver-manager update --gecko false
+[INFO] 
+[INFO] [06:39:27] I/file_manager - creating folder /workspace/source/node_modules/webdriver-manager/selenium
+[INFO] [06:39:27] I/config_source - curl -o/workspace/source/node_modules/webdriver-manager/selenium/standalone-response.xml https://selenium-release.storage.googleapis.com/
+[INFO] [06:39:27] I/config_source - curl -o/workspace/source/node_modules/webdriver-manager/selenium/chrome-response.xml https://chromedriver.storage.googleapis.com/
+[INFO] [06:39:28] I/downloader - curl -o/workspace/source/node_modules/webdriver-manager/selenium/chromedriver_84.0.4147.30.zip https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip
+[INFO] [06:39:28] I/update - chromedriver: unzipping chromedriver_84.0.4147.30.zip
+[INFO] [06:39:28] I/update - chromedriver: setting permissions to 0755 for /workspace/source/node_modules/webdriver-manager/selenium/chromedriver_84.0.4147.30
+[INFO] [06:39:28] I/downloader - curl -o/workspace/source/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
+[INFO] npm notice created a lockfile as package-lock.json. You should commit this file.
+[INFO] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/chokidar/node_modules/fsevents):
+[INFO] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[INFO] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/browser-sync/node_modules/chokidar/node_modules/fsevents):
+[INFO] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[INFO] npm WARN notsup Unsupported engine for watchpack-chokidar2@2.0.0: wanted: {"node":"<8.10.0"} (current: {"node":"12.16.1","npm":"6.14.5"})
+[INFO] npm WARN notsup Not compatible with your version of node/npm: watchpack-chokidar2@2.0.0
+[INFO] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/watchpack-chokidar2/node_modules/chokidar/node_modules/fsevents):
+[INFO] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[INFO] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/webpack-dev-server/node_modules/chokidar/node_modules/fsevents):
+[INFO] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[INFO] npm WARN @fortawesome/angular-fontawesome@0.6.1 requires a peer of @angular/core@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @fortawesome/angular-fontawesome@0.6.1 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ng-bootstrap/ng-bootstrap@6.1.0 requires a peer of @angular/common@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ng-bootstrap/ng-bootstrap@6.1.0 requires a peer of @angular/core@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ng-bootstrap/ng-bootstrap@6.1.0 requires a peer of @angular/forms@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ng-bootstrap/ng-bootstrap@6.1.0 requires a peer of @angular/localize@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ng-bootstrap/ng-bootstrap@6.1.0 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ngx-translate/core@12.1.2 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN @ngx-translate/http-loader@5.0.0 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN bootstrap@4.5.0 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN bootstrap@4.5.0 requires a peer of popper.js@^1.16.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-cookie-service@3.0.4 requires a peer of @angular/common@^9.0.5 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-cookie-service@3.0.4 requires a peer of @angular/core@^9.0.5 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-cookie-service@3.0.4 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-webstorage@5.0.0 requires a peer of @angular/common@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-webstorage@5.0.0 requires a peer of @angular/core@^9.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN ngx-webstorage@5.0.0 requires a peer of tslib@^1.10.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN codelyzer@5.2.2 requires a peer of @angular/compiler@>=2.3.1 <10.0.0 || >9.0.0-beta <10.0.0 || >9.1.0-beta <10.0.0 || >9.2.0-beta <10.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] npm WARN codelyzer@5.2.2 requires a peer of @angular/core@>=2.3.1 <10.0.0 || >9.0.0-beta <10.0.0 || >9.1.0-beta <10.0.0 || >9.2.0-beta <10.0.0 but none is installed. You must install peer dependencies yourself.
+[INFO] 
+[INFO] added 2664 packages from 1145 contributors and audited 2673 packages in 99.68s
+[INFO] 
+[INFO] 93 packages are looking for funding
+[INFO]   run `npm fund` for details
+[INFO] 
+[INFO] found 10 vulnerabilities (8 low, 2 high)
+[INFO]   run `npm audit fix` to fix them, or `npm audit` for details
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:31 min
+[INFO] Finished at: 2020-08-07T06:39:33Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-package[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.pvr.myapp:jhipster-sample-application >--------------
+[INFO] Building Jhipster Sample Application 1.2.21
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (default-resources) @ jhipster-sample-application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jhipster-sample-application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-versions) @ jhipster-sample-application ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-dependencyConvergence) @ jhipster-sample-application ---
+[WARNING] 
+Dependency convergence error for org.apache.commons:commons-compress:1.20 paths to dependency are:
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.testcontainers:mysql:1.14.3
+    +-org.testcontainers:jdbc:1.14.3
+      +-org.testcontainers:database-commons:1.14.3
+        +-org.testcontainers:testcontainers:1.14.3
+          +-org.apache.commons:commons-compress:1.20
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.springframework.boot:spring-boot-loader-tools:2.2.7.RELEASE
+    +-org.apache.commons:commons-compress:1.19
+
+[WARNING] 
+Dependency convergence error for org.apiguardian:apiguardian-api:1.1.0 paths to dependency are:
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.springframework.boot:spring-boot-starter-test:2.2.7.RELEASE
+    +-org.junit.jupiter:junit-jupiter:5.5.2
+      +-org.junit.jupiter:junit-jupiter-api:5.5.2
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.springframework.boot:spring-boot-starter-test:2.2.7.RELEASE
+    +-org.junit.jupiter:junit-jupiter:5.5.2
+      +-org.junit.jupiter:junit-jupiter-api:5.5.2
+        +-org.junit.platform:junit-platform-commons:1.5.2
+          +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.springframework.boot:spring-boot-starter-test:2.2.7.RELEASE
+    +-org.junit.jupiter:junit-jupiter:5.5.2
+      +-org.junit.jupiter:junit-jupiter-params:5.5.2
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.springframework.boot:spring-boot-starter-test:2.2.7.RELEASE
+    +-org.junit.jupiter:junit-jupiter:5.5.2
+      +-org.junit.jupiter:junit-jupiter-engine:5.5.2
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-com.tngtech.archunit:archunit-junit5-engine:0.14.1
+    +-com.tngtech.archunit:archunit-junit5-engine-api:0.14.1
+      +-org.junit.platform:junit-platform-engine:1.5.2
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.zalando:problem-violations:0.25.2
+      +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.zalando:problem-spring-common:0.25.2
+      +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.apiguardian:apiguardian-api:1.1.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.zalando:problem:0.23.0
+      +-org.apiguardian:apiguardian-api:1.0.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.zalando:jackson-datatype-problem:0.23.0
+      +-org.apiguardian:apiguardian-api:1.0.0
+and
++-com.pvr.myapp:jhipster-sample-application:1.2.21
+  +-org.zalando:problem-spring-web:0.25.2
+    +-org.zalando:faux-pas:0.8.0
+      +-org.apiguardian:apiguardian-api:1.0.0
+
+[WARNING] Rule 0: org.apache.maven.plugins.enforcer.DependencyConvergence failed with message:
+Failed while enforcing releasability. See above detailed error message.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (pre-unit-tests) @ jhipster-sample-application ---
+[INFO] argLine set to -javaagent:/home/jhipster/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/workspace/source/target/jacoco/test/test.exec -Djava.security.egd=file:/dev/./urandom -Xmx256m
+[INFO] 
+[INFO] --- properties-maven-plugin:1.0.0:read-project-properties (default) @ jhipster-sample-application ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jhipster-sample-application ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 70 source files to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jhipster-sample-application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jhipster-sample-application ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /workspace/source/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ jhipster-sample-application ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:report (post-unit-test) @ jhipster-sample-application ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ jhipster-sample-application ---
+[INFO] Building jar: /workspace/source/target/jhipster-sample-application-1.2.21.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.7.RELEASE:repackage (default) @ jhipster-sample-application ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent-integration (pre-integration-tests) @ jhipster-sample-application ---
+[INFO] argLine set to -javaagent:/home/jhipster/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/workspace/source/target/jacoco/integrationTest/integrationTest.exec -Djava.security.egd=file:/dev/./urandom -Xmx256m
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M4:integration-test (integration-test) @ jhipster-sample-application ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:report-integration (post-integration-tests) @ jhipster-sample-application ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.1.1:check (default) @ jhipster-sample-application ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M4:verify (verify) @ jhipster-sample-application ---
+[INFO] Tests are skipped.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:18 min
+[INFO] Finished at: 2020-08-07T06:43:56Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-build-and-push-base[0m
+[36mINFO[0m[0000] Downloading base image openjdk:11-jre-slim   
+2020/08/07 06:43:56 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:25ae9b4d57101dd9ea9d932941536b1f00b341c3425fc5f8289898d191254447: no such file or directory 
+[36mINFO[0m[0002] Downloading base image openjdk:11-jre-slim   
+2020/08/07 06:43:59 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0005] cmd: EXPOSE                                  
+[36mINFO[0m[0005] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0005] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0006] Using files from context: [/workspace/source/target/jhipster-sample-application-1.2.21.jar] 
+[36mINFO[0m[0006] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0006] Taking snapshot of full filesystem...        
+[36mINFO[0m[0006] ENV PORT 8080                                
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0006] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0006] EXPOSE 8080                                  
+[36mINFO[0m[0006] cmd: EXPOSE                                  
+[36mINFO[0m[0006] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0009] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0009] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0011] Taking snapshot of files...                  
+[36mINFO[0m[0013] Using files from context: [/workspace/source/target/jhipster-sample-application-1.2.21.jar] 
+[36mINFO[0m[0013] COPY target/*.jar /opt/app.jar               
+[36mINFO[0m[0015] Taking snapshot of files...                  
+[36mINFO[0m[0016] WORKDIR /opt                                 
+[36mINFO[0m[0016] cmd: workdir                                 
+[36mINFO[0m[0016] Changed working directory to /opt            
+[36mINFO[0m[0016] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0016] CMD ["java", "-jar", "app.jar"]              
+[36mINFO[0m[0016] No files changed in this command, skipping snapshotting. 
+2020/08/07 06:44:13 existing blob: sha256:0b793152b8507f5916a2d066e5568a08fef2d01629902b83177733d94e107e88
+2020/08/07 06:44:13 existing blob: sha256:b612fb485c1a57b0df6b67b606aa1fac45d68e211aa9ec140cd0933b3c311912
+2020/08/07 06:44:13 existing blob: sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb
+2020/08/07 06:44:13 existing blob: sha256:092c9b8e633fd73a2b448815d56f09aebf34c733300cd7747008b81fe7724a02
+2020/08/07 06:44:14 pushed blob: sha256:34f48d1c4ad7019112b7c36bf107bd89ad176aad42a36c9013c64d112f08d43e
+2020/08/07 06:44:14 pushed blob: sha256:c9ea0f5798bed52299142b873c34a7eb3135d05f85a367e99bcffb6c83e1d3a4
+2020/08/07 06:44:18 pushed blob: sha256:08bf6473048dc63adf635433c1cc25989d7217a5ac550b3ccaa0203bc7463480
+2020/08/07 06:44:18 702769831180.dkr.ecr.ap-south-1.amazonaws.com/702769831180/jhipster-sample-application:1.2.21: digest: sha256:ce29eac9eaba521d402d4e8a2d6050fe11ffee85fc42f37cf00aa2847b61eb79 size: 1244
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-source-mkdir-rajattyagipvr-jhipster-sample-a-mnb2h-rb6gf[0m
+{"level":"warn","ts":1596782659.0369165,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782659.047741,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/build-base/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mbuild-base[0m and container [32mstep-source-copy-rajattyagipvr-jhipster-sample-a-mnb2h-zwqhl[0m
+{"level":"warn","ts":1596782659.162875,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782665.135748,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/build-base/workspace\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-credential-initializer-h6j62[0m
+{"level":"warn","ts":1596782668.6238205,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596782668.628301,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-working-dir-initializer-pkwrh[0m
+{"level":"warn","ts":1596782669.6067824,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782669.6078475,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-create-dir-workspace-jjnz8[0m
+{"level":"warn","ts":1596782674.643184,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782674.6440957,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-source-copy-workspace-pvtvn[0m
+{"level":"warn","ts":1596782674.910398,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596782678.8512652,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/build-base/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-changelog[0m
+Converted /workspace/source/charts/jhipster-sample-application to an unshallow repository
+Generating change log from git ref 00f74d4e40fd10181d6cd0af0536ae953f0acbaa => 4260006cdff55c9c38e7babb48a56b336a5e5e06
+WARNING: Failed to enrich commit c86fab8e7df3a0f12b01b2d5687cd99af371d139 with issues: users.jenkins.io "x-0" already exists
+WARNING: Failed to enrich commit c86fab8e7df3a0f12b01b2d5687cd99af371d139 with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+WARNING: No release found for *************/jhipster-sample-application and tag v1.2.21 so creating a new release
+Updated the release information at https://github.com/*************/jhipster-sample-application/releases/tag/v1.2.21
+generated: /workspace/source/charts/jhipster-sample-application/templates/release.yaml
+Created Release jhipster-sample-application-1-2-21 resource in namespace **
+Updating PipelineActivity *************-jhipster-sample-application-master-18 with version 1.2.21
+Updated PipelineActivities *************-jhipster-sample-application-master-18 with release notes URL: https://github.com/*************/jhipster-sample-application/releases/tag/v1.2.21
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file jhipster-sample-application-1.2.21.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 200 response: 
+
+Showing logs for build [32mrajattyagipvr-jhipster-sample-a-mnb2h-18[0m stage [32mpromote[0m and container [32mstep-jx-promote[0m
+Cloning the Jenkins X versions repo https://github.com/*************/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app jhipster-sample-application version 1.2.21 to namespace **-staging
+WARNING: could not find upstream git URL failed to unmarshal  due to no GitConfDir defined
+pushed merged branch promote-jhipster-sample-application-1.2.21
+Created Pull Request: https://github.com/*************/environment-cluster12-staging/pull/64
+Added label updatebot to Pull Request https://github.com/*************/environment-cluster12-staging/pull/64
+got git provider status pending from PR https://github.com/*************/environment-cluster12-staging/pull/64
+got git provider status pending from PR https://github.com/*************/environment-cluster12-staging/pull/64
+got git provider status pending from PR https://github.com/*************/environment-cluster12-staging/pull/64
+got git provider status pending from PR https://github.com/*************/environment-cluster12-staging/pull/64
+Pull Request https://github.com/*************/environment-cluster12-staging/pull/64 is merged at sha 1f5fed0669ddc538249f700b53284200549c5871
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names jhipster-sample-application, **-jhipster-sample-application, **-staging-jhipster-sample-application
